@@ -62,6 +62,14 @@ const resumeSchema = z.object({
             highlights: z.array(z.string()),
             github: z.string().url().optional(),
             isActive: z.boolean().optional().default(false),
+            startDate: z.string().date().optional(),
+            endDate: z.string().date().nullable().optional(),
+            storeLinks: z.array(
+                z.object({
+                    store: z.string(),
+                    url: z.string().url(),
+                })
+            ).optional(),
         })
     ),
 });

@@ -12,7 +12,7 @@ const t = useTranslations(lang);
 <ul>
     {
         projects.map(
-            ({ url, description, highlights, name, isActive, github }) => (
+            ({ url, description, highlights, name, isActive, github, startDate, endDate, storeLinks }) => (
                 <li>
                     <article>
                         <header>
@@ -36,12 +36,33 @@ const t = useTranslations(lang);
                                     </a>
                                 )}
                             </h3>
+                            {startDate && (
+                                <time class="project-date">
+                                    {new Date(`${startDate}T00:00:00-06:00`).getFullYear()}
+                                    {" — "}
+                                    {endDate != null ? new Date(`${endDate}T00:00:00-06:00`).getFullYear() : t("projects.present")}
+                                </time>
+                            )}
                             <p>{description}</p>
                         </header>
                         <footer>
                             {highlights.map((highlight) => (
                                 <span>{highlight}</span>
                             ))}
+                            {storeLinks && storeLinks.length > 0 && (
+                                <div class="store-links">
+                                    {storeLinks.map(({ store, url: storeUrl }) => (
+                                        <a
+                                            class="store-link"
+                                            href={storeUrl}
+                                            target="_blank"
+                                            title={`${t("projects.downloadOn")} ${store}`}
+                                        >
+                                            {store}
+                                        </a>
+                                    ))}
+                                </div>
+                            )}
                         </footer>
                     </article>
                 </li>
@@ -135,5 +156,36 @@ const t = useTranslations(lang);
         font-size: 0.6rem;
         font-weight: 500;
         padding: 0.2rem 0.6rem;
+    }
+
+    .project-date {
+        display: block;
+        font-size: 0.7rem;
+        color: var(--secondary-text);
+        margin-bottom: 6px;
+    }
+
+    .store-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 4px;
+        width: 100%;
+    }
+
+    .store-link {
+        border-radius: 6px;
+        border: 1px solid var(--projects-background);
+        color: var(--secondary-text) !important;
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 0.2rem 0.6rem;
+        text-decoration: none !important;
+        transition: all 0.2s ease;
+    }
+
+    .store-link:hover {
+        background: var(--hover-background);
+        text-decoration: none !important;
     }
 </style>

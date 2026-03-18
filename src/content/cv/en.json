@@ -40,7 +40,7 @@
             "position": "Senior Software Developer",
             "startDate": "2024-09-01",
             "endDate": null,
-            "summary": "Responsible for the development and optimization of frontend applications. Designed scalable architectures, enforced coding standards, and implemented best practices across the technical team.",
+            "summary": "Led frontend architecture and development for enterprise applications. Defined technical standards, mentored junior developers, and drove adoption of best practices to ensure code quality and scalability across the team.",
             "highlights": [
                 ""
             ],
@@ -51,7 +51,7 @@
             "position": "Software Developer",
             "startDate": "2022-08-15",
             "endDate": "2024-08-30",
-            "summary": "Developed mobile solutions using Flutter and Dart, integrated REST APIs and serverless functions using Python and AWS Lambda, and optimized performance across production applications.",
+            "summary": "Contributed to the mobile development of a fintech wallet deployed across six countries. Collaborated with cross-functional teams on Flutter-based solutions, integrated serverless functions on AWS Lambda, and helped maintain consistent performance across all markets.",
             "highlights": [
                 ""
             ],
@@ -62,7 +62,7 @@
             "position": "Internet and Social Media Manager",
             "startDate": "2022-01-15",
             "endDate": "2022-08-30",
-            "summary": "Led technology projects for digital banking products. Implemented new technologies and data-driven approaches to enhance strategic decision-making.",
+            "summary": "Contributed to the development of digital banking portals and MVPs for new products at one of Mexico's largest financial institutions. Collaborated closely with product and design teams to deliver functional, high-quality web experiences.",
             "highlights": [
                 ""
             ],
@@ -73,7 +73,7 @@
             "position": "Full Stack Developer",
             "startDate": "2021-07-01",
             "endDate": "2022-01-15",
-            "summary": "Designed modern interfaces using React and Angular. Built robust APIs with Node.js and TypeScript, and developed mobile apps using React Native.",
+            "summary": "Independently led end-to-end development projects for multiple clients. Managed requirements, delivery timelines, and stakeholder communication while building scalable web and mobile solutions with React, Angular, Node.js, and React Native.",
             "highlights": [
                 ""
             ],
@@ -84,7 +84,7 @@
             "position": "Java Developer",
             "startDate": "2020-01-15",
             "endDate": "2021-06-30",
-            "summary": "Worked on application development using Angular and Node.js, and mobile solutions with Kotlin and Java. Integrated multiple APIs to improve system interoperability.",
+            "summary": "Contributed to fintech application development using Angular, Node.js, Kotlin, and Java. Participated in API integrations and collaborated with the team on improvements that increased system reliability and cross-platform consistency.",
             "highlights": [
                 ""
             ],
@@ -95,7 +95,7 @@
             "position": "Systems Analyst",
             "startDate": "2015-01-15",
             "endDate": "2020-01-15",
-            "summary": "Led the technical support area, improving operational efficiency and customer satisfaction. Implemented software solutions to automate internal processes.",
+            "summary": "Led the Technical Support area, managing team operations and improving service quality metrics. Identified process bottlenecks and implemented automated software solutions that reduced response times and increased operational efficiency.",
             "highlights": [
                 ""
             ],
@@ -117,22 +117,22 @@
         }
     ],
     "skills": [
-        { "name": "JavaScript / TypeScript" },
-        { "name": "React / Angular / React Native / Flutter" },
-        { "name": "Node.js / Python / Java / Kotlin" },
-        { "name": "AWS / Lambda / REST APIs" },
-        { "name": "Software Architecture" },
-        { "name": "Performance Optimization" },
-        { "name": "Scalable Interface Design" },
+        { "name": "Technical Leadership & Mentoring" },
+        { "name": "Software Architecture & Design Patterns" },
+        { "name": "Mobile Development (Flutter / React Native)" },
+        { "name": "Frontend (React / Angular)" },
+        { "name": "Backend & APIs (Node.js / Python / Java)" },
+        { "name": "Cloud & Serverless (AWS / Lambda)" },
+        { "name": "Agile / Scrum / Kanban" },
         { "name": "Git / GitHub / GitLab" }
-        ],
-        "softskills": [
-        { "name": "Technical Leadership" },
-        { "name": "Effective Communication" },
+    ],
+    "softskills": [
+        { "name": "Technical Leadership & Team Development" },
+        { "name": "Strategic Decision-Making" },
+        { "name": "Cross-functional Collaboration" },
         { "name": "Agile Project Management" },
-        { "name": "Analytical Thinking" },
-        { "name": "Self-motivation and Proactivity" },
-        { "name": "Technological Adaptability" }
+        { "name": "Mentoring & Knowledge Transfer" },
+        { "name": "Analytical & Business Thinking" }
     ],
     "projects": [
         {
@@ -143,9 +143,32 @@
                 "Developed with React Native for cross-platform performance",
                 "Real-time payment tracking and notifications",
                 "Integrated secure authentication and user sessions",
-                "Published on Play Store and Google Play"
+                "Published on App Store and Google Play"
             ],
-            "url": "https://kaching.mx/#download"
+            "url": "https://kaching.mx",
+            "startDate": "2024-08-01",
+            "endDate": "2026-01-01",
+            "storeLinks": [
+                { "store": "App Store", "url": "https://apps.apple.com/mx/app/kaching/id6502358537" },
+                { "store": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.apoyosoluciones.appkaching" }
+            ]
+        },
+        {
+            "name": "Tigo Money Wallet",
+            "isActive": true,
+            "description": "Digital wallet and mobile payment application deployed across six countries: Bolivia, El Salvador, Guatemala, Honduras, Panama, and Paraguay. A single codebase localized per market, enabling users to send and receive money, pay bills, top up mobile credit, and manage their personal finances from their smartphone.",
+            "highlights": [
+                "Developed with Flutter for cross-platform performance",
+                "Real-time balance updates and push notifications",
+                "Integrated secure authentication and biometric login"
+            ],
+            "url": "https://www.tigomoney.com",
+            "startDate": "2022-08-01",
+            "endDate": "2024-08-01",
+            "storeLinks": [
+                { "store": "App Store", "url": "https://apps.apple.com/cl/app/billetera-tigo-money-paraguay/id1589504689" },
+                { "store": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.juvo.tigomoney" }
+            ]
         }
     ]
 }
