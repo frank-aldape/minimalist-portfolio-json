@@ -88,9 +88,15 @@ const t = useTranslations(lang);
 
     ul {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         margin-inline: -16px;
+    }
+
+    @media (max-width: 600px) {
+        ul {
+            grid-template-columns: 1fr;
+        }
     }
 
     @keyframes pulse {
