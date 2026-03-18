@@ -156,10 +156,13 @@ const dataInfo = [printInfo, languageInfo, toggleThemeInfo, ...socialInfo];
                     return {
                         ...basics,
                         handler: () => {
-                            const element = document.documentElement;
-                            element.classList.remove("dark");
-                            window.scrollTo(0, 0);
-                            window.print();
+                            hotkeypad.close();
+                            setTimeout(() => {
+                                const element = document.documentElement;
+                                element.classList.remove("dark");
+                                window.scrollTo(0, 0);
+                                window.print();
+                            }, 300);
                         },
                     };
                 }
@@ -176,7 +179,8 @@ const dataInfo = [printInfo, languageInfo, toggleThemeInfo, ...socialInfo];
 
 <style>
     @media print {
-        ninja-keys {
+        ninja-keys,
+        #hotkeypad {
             display: none !important;
         }
     }
